@@ -4,18 +4,22 @@
 	*{
 		background: #212121;
         color: white;
-        font-family: courier}
+        font-family: Arial, Helvetica, sans-serif}
 
         .atencion {
             background: #E8F5E9;
             color: #212121;
         }
 
+        table {
+            border-spacing: 10px;
+        }
+        
 		.BotoneraNoSelect {
             color: #BDBDBD;
 		}
 
-		td:hover{
+		tbody.Botonera td.Boton:hover{
 			background: #424242;
 		}
 
@@ -25,7 +29,7 @@
 			background: #424242;
 		}
 
-		th, td {
+		td.Boton {
  			padding: 10px;
 			border-radius: 3px;
 		}	
@@ -34,18 +38,18 @@
 
 <head>
     <table>
-		<tbody>
+		<tbody class="Botonera">
 			<tr>
 				<td>
 					<img src="https://images.evetech.net/corporations/98759176/logo" width="64" height="64" alt="Logo Corp">
 				</td>
-				<td>
+				<td class="Boton">
 					<span class="BotoneraNoSelect">Historia</span>
 				</td> 
-	            <td>
+	            <td class="Boton">
 					<span class="BotoneraNoSelect">Políticas</span>
                 </td>
-				<td>
+				<td class="Boton">
 					<span class="BotoneraNoSelect">Doctrinas</span>
                 </td>
             </tr>
