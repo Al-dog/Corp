@@ -32,6 +32,7 @@
 		td.Boton {
  			padding: 10px;
 			border-radius: 3px;
+			cursor: pointer;
 		}	
 </style>
 
@@ -43,7 +44,7 @@
 				<td>
 					<img src="https://images.evetech.net/corporations/98759176/logo" width="64" height="64" alt="Logo Corp">
 				</td>
-				<td class="Boton">
+				<td class="Boton" onclick="abrirPagina('./p/Historia.html')">
 					<span class="BotoneraNoSelect">Historia</span>
 				</td> 
 	            <td class="Boton">
@@ -56,6 +57,13 @@
         </tbody>
     </table>
 </head>
+
+<script>
+	function abrirPagina(url) {
+	  window.location.href = url;
+	}
+  </script>
+
 
 <meta charset="UTF-8">
 <meta name="description" content="Pagina de la corp">
@@ -128,10 +136,10 @@
 <body>
 	<h2 class="atencion">Pendientes para discutir entre Txema y Aldog</h2>
 	<ol>
-		<li><a href="https://al-dog.github.io/Corp/p/diagnostico.html">Pequeño diagnóstico previo</a></li>
-		<li><a href="https://al-dog.github.io/Corp/p/identidad.html">Identidad de la Corp</a></li>
-		<li><a href="https://al-dog.github.io/Corp/p/politicas.html">Políticas de la Corp</a></li>
-		<li><a href="https://al-dog.github.io/Corp/p/doctrinas.html">Doctrinas</a></li>
+		<li><a href="./p/diagnostico.html">Pequeño diagnóstico previo</a></li>
+		<li><a href="./p/identidad.html">Identidad de la Corp</a></li>
+		<li><a href="./p/politicas.html">Políticas de la Corp</a></li>
+		<li><a href="./p/doctrinas.html">Doctrinas</a></li>
 	</ol>
 
 </body>
