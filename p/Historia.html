@@ -42,11 +42,9 @@
 		<tbody class="Botonera">
 			<tr>
 				<td>
-                    <a href="../index.html">
-					    <img src="https://images.evetech.net/corporations/98759176/logo" width="64" height="64" alt="Logo Corp">
-                    </a>
+					<img src="https://images.evetech.net/corporations/98759176/logo" width="64" height="64" alt="Logo Corp">
 				</td>
-				<td class="Boton">
+				<td class="Boton" onclick="abrirPagina('./p/Historia.html')">
 					<span class="BotoneraNoSelect">Historia</span>
 				</td> 
 	            <td class="Boton">
@@ -60,9 +58,17 @@
     </table>
 </head>
 
+<script>
+	function abrirPagina(url) {
+	  window.location.href = url;
+	}
+  </script>
+
+
 <meta charset="UTF-8">
 <meta name="description" content="Pagina de la corp">
 <meta name="Autor" content="Aldog">
+
 
 
 <h1>
@@ -82,3 +88,5 @@
     <p>Notamos que estos tres puntos</p>
   
 </body>
+
+</html>

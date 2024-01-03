@@ -1,21 +1,74 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html> 
 <html>
-<head>
-	<a href="https://al-dog.github.io/Corp/index.html">Inicio</a>
-<meta charset="utf-8">
-<title>Pequeño diagnóstico previo [2023-12-30]</title>
-</head>
-
 <style>
 	*{
 		background: #212121;
         color: white;
-        font-family: courier}
+        font-family: Arial, Helvetica, sans-serif}
+
         .atencion {
             background: #E8F5E9;
             color: #212121;
         }
+
+        table {
+            border-spacing: 10px;
+        }
+        
+		.BotoneraNoSelect {
+            color: #BDBDBD;
+		}
+
+		tbody.Botonera td.Boton:hover{
+			background: #424242;
+		}
+
+		td:hover .BotoneraNoSelect{
+			font-weight: bold;
+			color: white;
+			background: #424242;
+		}
+
+		td.Boton {
+ 			padding: 10px;
+			border-radius: 3px;
+			cursor: pointer;
+		}	
 </style>
+
+
+<head>
+    <table>
+		<tbody class="Botonera">
+			<tr>
+				<td>
+					<img src="https://images.evetech.net/corporations/98759176/logo" width="64" height="64" alt="Logo Corp">
+				</td>
+				<td class="Boton" onclick="abrirPagina('./p/Historia.html')">
+					<span class="BotoneraNoSelect">Historia</span>
+				</td> 
+	            <td class="Boton">
+					<span class="BotoneraNoSelect">Políticas</span>
+                </td>
+				<td class="Boton">
+					<span class="BotoneraNoSelect">Doctrinas</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</head>
+
+<script>
+	function abrirPagina(url) {
+	  window.location.href = url;
+	}
+  </script>
+
+
+<meta charset="UTF-8">
+<meta name="description" content="Pagina de la corp">
+<meta name="Autor" content="Aldog">
+
 
 <body>
 	<h1>Doctrinas de la Corp</h1>
